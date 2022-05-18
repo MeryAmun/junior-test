@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+.header__wrapper{
+position: absolute;
+width: 1440px;
+height: 80px;
+left: 0px;
+top: 0px;
+}
+
+
+.women{
+position: static;
+height: 20px;
+left: 0%;
+right: 0%;
+top: calc(50% - 20px/2 - 16px);
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 120%;
+/* identical to box height, or 19px */
+
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+/* --c-primary */
+
+color: #5ECE7B;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 30px 0px;
+    
+    
+}
+
+.women{
+
+}
+.border{
+position: static;
+height: 2px;
+left: 0%;
+right: 0%;
+bottom: 0px;
+
+/* --c-primary */
+
+background: #5ECE7B;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 30px 0px;
+}
+.men{
+    position: static;
+    height: 20px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 20px/2 - 16px);
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    /* identical to box height, or 19px */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    
+    /* --c-text */
+    
+    color: #1D1F22;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 30px 0px;
+}
+.children{
+/* Label */
+
+
+position: static;
+height: 20px;
+left: 0%;
+right: 0%;
+top: calc(50% - 20px/2 - 16px);
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 120%;
+/* identical to box height, or 19px */
+
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+/* --c-text */
+
+color: #1D1F22;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 30px 0px;
+}
+
+.wome, .men,.children:hover{
+border-bottom: 3px solid bl;
+
+
+}

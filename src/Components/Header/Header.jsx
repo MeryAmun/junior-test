@@ -3,6 +3,11 @@ import {BsCart,BsArrowCounterclockwise} from '../../Components/Icons/index'
 import './header.css'
 
 export default class Header extends Component {
+  constructor(){
+    this.state ={
+      active:false
+    }
+  }
   render() {
     return (
       <div className='header__wrapper'>

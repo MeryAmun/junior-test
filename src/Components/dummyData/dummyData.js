@@ -2,16 +2,16 @@ import { productA, productB, productC, productD} from '../../assets/index'
 
 const data = [
     {
-        img:productA, productName:"Apollo Running Short", pricr: '$50.00'
+        id:'1', image:'../../assets/images/Product A.png', productName:"Apollo Running Short", productPrice: '$50.00'
     },
     {
-        img:productB, productName:"Apollo Running Short", pricr: '$50.00'
+        id:'2', image:productB, productName:"Apollo Running Short", productPrice: '$50.00'
     },
     {
-        img:productC, productName:"Apollo Running Short", pricr: '$50.00'
+        id:'3', image:productC, productName:"Apollo Running Short", productPrice: '$50.00'
     },
     {
-        img:productD, productName:"Apollo Running Short", pricr: '$50.00'
+        id:'4', image:productD, productName:"Apollo Running Short", productPrice: '$50.00'
     }
 ]
 

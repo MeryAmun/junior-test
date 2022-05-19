@@ -1,0 +1,96 @@
+
+
+
+
+.category__header-text{
+    height: 68px;
+width: 299px;
+left: 101px;
+top: 160px;
+
+
+font-family: var(--font-main);
+font-size: 42px;
+--regular-font: 400px;
+line-height: 67px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+
+.category__item_wrapper{
+    height: 444px;
+width: 386px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+padding: 16px;
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 16px;
+
+
+/* --c-white */
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.product__name{
+    height: 29px;
+width: 354px;
+left: 0px;
+top: 0px;
+
+font-family: Raleway;
+font-size: 18px;
+font-weight: var(--normal-font);
+line-height: 29px;
+letter-spacing: 0px;
+text-align: left;
+
+color: #1D1F22;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.product__price{
+    
+width: 58px;
+height: 29px;
+
+/* --price-regular-font */
+
+font-family: var(--font-main);
+font-style: normal;
+font-weight: var(--medium-font);
+font-size: 18px;
+line-height: 160%;
+/* identical to box height, or 29px */
+
+text-align: right;
+
+/* --c-black */
+
+color: #1D1F22;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}

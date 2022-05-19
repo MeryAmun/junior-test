@@ -1,6 +1,7 @@
-import { BsCart } from 'react-icons/bs';
+import { BsCart , BsArrowCounterclockwise} from 'react-icons/bs';
+
 
 
 export  {
-    BsCart
+    BsCart, BsArrowCounterclockwise
 }

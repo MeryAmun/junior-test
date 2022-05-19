@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {BsCart} from '../../Components/Icons/index'
 import './header.css'
 
 export default class Header extends Component {
@@ -16,11 +17,22 @@ export default class Header extends Component {
                   men
               </span>
               <span className="children">
-                  children
+                  kids
               </span>
           </div>
-          <div className="header__logo">
-
+          <div className="header__logo__wrapper">
+   <div className="logo__container">
+   <span className="line"></span>
+   <span className="arrow"></span>
+   </div>
+          </div>
+          <div className="header__currency">
+            <select>
+              <option value="USD">$</option>
+            </select>
+          <span className="cart">
+            <BsCart/>
+          </span>
           </div>
       </div>
     )

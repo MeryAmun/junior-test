@@ -1,0 +1,151 @@
+.category__items-wrapper{
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+    }
+.category__wrapper{
+    margin-top: 3rem;
+}
+
+
+.category__header-text{
+    height: 68px;
+width: 299px;
+left: 101px;
+top: 160px;
+
+
+font-family: var(--font-main);
+font-size: 42px;
+ font-weight: var(--regular-font);
+line-height: 67px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+
+.category__item_wrapper{
+    height: 444px;
+width: 386px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+padding: 16px;
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 16px;
+
+
+/* --c-white */
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .category{
+        height: 444px;
+    width: 386px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 16px;
+    
+    display: flex;
+   
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+    
+    
+    /* --c-white */
+    
+    background: #FFFFFF;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    }
+    
+.category__header-text{
+    height: 68px;
+width: 299px;
+left: 101px;
+top: 160px;
+
+
+font-family: var(--font-main);
+font-size: 22px;
+ font-weight: var(--regular-font);
+line-height: 67px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+}
+
+@media screen and (max-width: 600px) {
+
+    .category__item_wrapper{
+        height: 444px;
+    width: 386px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+    
+    
+    /* --c-white */
+    
+    background: #FFFFFF;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    }
+    
+    .category__header-text{
+        height: 68px;
+    width: 299px;
+    left: 101px;
+    top: 160px;
+    
+    
+    font-family: var(--font-main);
+    font-size: 22px;
+     font-weight: var(--regular-font);
+    line-height: 67px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+    
+    }
+    }

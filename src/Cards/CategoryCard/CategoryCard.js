@@ -1,27 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './categoryCard.css'
-export default class CategoryCard extends Component {
-  constructor({ id, image, productName, price}) {
-    super();
-    this.state = {
-      id, image, productName, price
-    };
-  }
 
-  render() {
+
+ const CategoryCard = ({ id, image, productName, price}) => {
+  
     return (
-      <div className='category__wrapper'>
-       <div className='category__header'>
-         <h2 className='category__header-text'>
-    
-         </h2>
-       </div>
-      <div className='category__items-wrapper'key={this.id}>
-      <img src={this.image} alt=''/>
-    <h3 className='product__name'>{this.productName}</h3>
-    <span className='product__price'>{this.price}</span>
-      </div>
+      <div className='category__item' key={id}>
+      <img src={image} alt='product' className='product__image'/>
+    <div className='category__titles'>
+    <h3 className='product__name'>{productName}</h3>
+    <span className='product__price'>{price}</span>
+    </div>
       </div>
     )
-  }
+  
 }
+export default CategoryCard

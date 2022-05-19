@@ -10,7 +10,9 @@
   --medium-font:500px;
   --heavy-font:600px;
 }
-
+.App{
+    margin: 2rem;
+   }
 
 * {
   box-sizing: border-box;

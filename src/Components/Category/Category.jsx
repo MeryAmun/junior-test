@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 import prodauctData from '../dummyData/dummyData';
 import CategoryCard from '../../Cards/CategoryCard/CategoryCard';
+import './category.css'
 
 export default class Category extends Component {
   
   render() {
-    console.log(prodauctData)
+    
     return (
-      <div>
+      <div className='category__wrapper'>
+       <div className='category__header'>
+         <h2 className='category__header-text'>
+    Category name
+         </h2>
+       </div>
+       <div className='category__items-wrapper'>
         {
          
           prodauctData.map((data) => (
-            <CategoryCard
+              <CategoryCard
             key={data.id}
             image={data.image}
             productName={data.productName}
@@ -19,6 +26,7 @@ export default class Category extends Component {
           ))
           
         }
+        </div>
       </div>
     )
   }

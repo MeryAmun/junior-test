@@ -4,17 +4,29 @@
     justify-content: center;
     align-items: center;
 }
-.properties__wrapper{
+.products__wrapper{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;  
 }
+
+.amount{
+    margin-left: -5.5rem;
+}
+.cart__item_props{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    flex: 1;
+}
 .cart__value{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    flex: 1;  
 }
 
 
@@ -113,7 +125,7 @@ text-align: left;
 color: #1D1F22;
 
 
-/* Inside auto layout */
+
 
 flex: none;
 order: 0;
@@ -121,7 +133,7 @@ flex-grow: 0;
 }
 
 .amount{
-    /* Label */
+
 width: 52px;
 height: 26px;
 
@@ -130,9 +142,9 @@ font-style: normal;
 font-weight: var(--medium-font);
 font-size: 16px;
 line-height: 160%;
-/* identical to box height, or 26px */
+
 color: #1D1F22;
-/* Inside auto layout */
+
 
 flex: none;
 order: 1;
@@ -142,30 +154,22 @@ flex-grow: 0;
 .size__wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex: 1;
+   
 }
 .size__label{
-    width: 30px;
+width: 30px;
 height: 16px;
+margin-left: -6rem;
 
 font-family: var(--font-main);
 font-weight: var(--regular-font);
 font-size: 14px;
 line-height: 16px;
-/* identical to box height, or 114% */
-
-display: flex;
-align-items: center;
 
 color: #1D1F22;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
 }
 
 .sizes{
@@ -196,8 +200,13 @@ margin-right: .5rem;
 }
 
 .color__wrapper{
-    display: block;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: .5rem;
+    margin-left: -3.5rem;
+    border: 3px solid blue;
+    flex: 1;
 }
 
 .color__label{
@@ -254,10 +263,8 @@ margin-left: .5rem;
     
     /* Inside auto layout */
     
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 1; 
+    flex: 1;
+    
 }
 
 

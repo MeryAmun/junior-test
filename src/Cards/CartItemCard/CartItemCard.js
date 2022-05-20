@@ -7,7 +7,7 @@ export default function CartItemCard() {
    <div className='cart__items_wrapper'>
       <div className='cart__item_wrapper'>
       <div className='cart__item_props'>
-      <div className='properties__wrapper'>
+      <div className='products__wrapper'>
           <span className='product__name'>
           Apollo Running Short
               </span> 

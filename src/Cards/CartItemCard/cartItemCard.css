@@ -130,3 +130,50 @@ flex: none;
 order: 1;
 flex-grow: 0;
 }
+
+.size__wrapper{
+    width: 30px;
+height: 16px;
+
+font-family: var(--font-main);
+font-style: normal;
+font-weight: var(--regular-font);
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+
+display: flex;
+align-items: center;
+
+color: #1D1F22;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.label{
+    position: absolute;
+width: 24px;
+height: 24px;
+left: 96px;
+top: 0px;
+
+font-family:var(--font-sub);
+font-style: normal;
+font-weight:var(--regular-font);
+font-size: 14px;
+line-height: 160%;
+/* or 22px */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #1D1F22;
+
+
+}

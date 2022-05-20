@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import prodauctData from '../dummyData/dummyData';
 import CategoryCard from '../../Cards/CategoryCard/CategoryCard';
 import './category.css'
+import CartItemCard from '../../Cards/CartItemCard/CartItemCard';
 
 export default class Category extends Component {
   
@@ -15,7 +16,7 @@ export default class Category extends Component {
          </h2>
        </div>
        <div className='category__items-wrapper'>
-        {
+        {/* {
          
           prodauctData.map((data) => (
               <CategoryCard
@@ -25,8 +26,10 @@ export default class Category extends Component {
             price={data.productPrice}/>
           ))
           
-        }
+        } */}
+         <CartItemCard/>
         </div>
+       
       </div>
     )
   }

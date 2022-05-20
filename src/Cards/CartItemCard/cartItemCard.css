@@ -1,0 +1,132 @@
+
+
+
+
+
+
+
+
+
+.card__add{
+height: 24px;
+width: 24px;
+border-radius: 0px;
+border: 1px solid #1D1F22;
+
+box-sizing: border-box;
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 1px solid #1D1F22;
+}
+.sign{
+height: 0px;
+width: 8px;
+left: 8px;
+top: 12px;
+border-radius: 0px;
+       
+
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 50%;
+bottom: 50%;
+
+border: 1px solid #1D1F22;
+}
+
+.card__quantity{
+    height: 26px;
+width: 8px;
+left: 8px;
+top: 82px;
+border-radius: nullpx;
+
+font-family: var(--font-main);
+font-size: 16px;
+font-weight: var(--medium-font);
+line-height: 26px;
+letter-spacing: 0em;
+text-align: right;
+
+color: #1D1F22;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.card__reduce{
+    height: 24px;
+width: 24px;
+border-radius: 0px;
+border: 1px solid #1D1F22;
+
+box-sizing: border-box;
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 1px solid #1D1F22;
+}
+
+.product__name{
+    height: 52px;
+    width: 136px;
+    left: 0px;
+    top: 0px;
+    border-radius: nullpx;
+      
+
+    font-family:var(--font-main);
+font-size: 16px;
+font-weight: var(--normal-font);
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+
+color: #1D1F22;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.amount{
+    /* Label */
+
+
+width: 52px;
+height: 26px;
+
+font-family: var(--font-main);
+font-style: normal;
+font-weight: var(--medium-font);
+font-size: 16px;
+line-height: 160%;
+/* identical to box height, or 26px */
+
+text-align: right;
+
+color: #1D1F22;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}

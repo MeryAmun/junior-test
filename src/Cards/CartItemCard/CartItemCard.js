@@ -22,7 +22,7 @@ export default function CartItemCard() {
            <div className='sizes'>
                <span className='size'>XS</span>
                <span className='size'>S</span>
-               <span className='size'>M</span>
+               <span className='size size__active'>M</span>
                <span className='size'>L</span>
            </div>
        </div>
@@ -39,13 +39,13 @@ export default function CartItemCard() {
       </div>
       <div className='cart__value'>
            <div className='cart__add'>
-               <span className='sign'></span>
+               <span className='sign'>+</span>
            </div>
            <div className='cart__quantity'>
-               <span className='number'></span>
+               <span className='sign'>2</span>
            </div>
            <div className='cart__reduce'>
-               <span className='sign'></span>
+               <span className='sign'>-</span>
            </div>
        </div>
        <img src={productA} alt='cart' className='cart__item_image'/>

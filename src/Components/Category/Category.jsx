@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
+import React, {useState} from 'react';
 import prodauctData from '../dummyData/dummyData';
 import CategoryCard from '../../Cards/CategoryCard/CategoryCard';
 import './category.css'
 import CartItemCard from '../../Cards/CartItemCard/CartItemCard';
 
-export default class Category extends Component {
-  
-  render() {
-    
+ const Category = ()  => {
+  const [products, setProducts] = useState();
+  const [loading, setLoading] = useState(false);
+  const [value, setValue] = useState(0);
+
+//const {id, image, } = prodauctData[1].products
     return (
       <div className='category__wrapper'>
        <div className='category__header'>
@@ -17,15 +19,14 @@ export default class Category extends Component {
        </div>
        <div className='category__items-wrapper'>
         {
-         
-          prodauctData.map((data) => (
-              <CategoryCard
+           prodauctData[1].products.map((data) => (
+            <CategoryCard
             key={data.id}
             image={data.image}
             productName={data.productName}
             price={data.productPrice}/>
+             
           ))
-          
         }
          <CartItemCard className='overlay'/>
         </div>
@@ -33,4 +34,5 @@ export default class Category extends Component {
       </div>
     )
   }
-}
+  export default Category
+

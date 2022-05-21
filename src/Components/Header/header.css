@@ -27,7 +27,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: .2rem;
+    margin-right: .3rem;
 }
 
 .active1{
@@ -37,6 +37,10 @@ align-items: center;
     background: #5ECE7B;
 }
 
+button{
+    border: none;
+    background: #FFFFFF;
+}
 .border{
 height: 2px;
 width: 100%;
@@ -91,17 +95,8 @@ cursor: pointer;
 .header__logo__wrapper{
     height: 28.62px;
     width: 24.18px;
-    left: 0px;
-    top: 1.31px;
     border-radius: 2px;
-    
-    /* svg 3 */
-
-left: 0%;
-right: -0.07%;
-top: 4.33%;
-bottom: 0.83%;
-
+    margin-right: .5rem;
 background: linear-gradient(316.98deg, #52D67A 16.88%, #5AEE87 84.04%);
 }
 
@@ -185,17 +180,19 @@ select,.cart{
 }
 
 @media  screen and (max-width: 1024px){
-    .women,.men,.children{
+    .gender{
         margin-left: 1rem;
         font-size: 13px;
     }
+    option{ 
+        font-size: 13px;
+        line-height: 60%;
+        }
 }
 
 @media  screen and (max-width: 600px){
-    .header__wrapper{
-        overflow: hidden;
-    }
-    .women,.men,.children{
+   
+    .gender{
         margin-left: .5rem;
         margin-right: .4rem;
         font-size: 14px;
@@ -206,5 +203,9 @@ select,.cart{
         height: 23.84px;
         width: 20.09px;
     }
+    option{ 
+        font-size: 13px;
+        line-height: 60%;
+        }
     
 }

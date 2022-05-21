@@ -27,6 +27,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: .2rem;
 }
 
 .active1{
@@ -51,120 +52,36 @@ flex-grow: 0;
 margin: 30px 0px;
 }
 
-.women{
-
-width: 65px;
-left: 0px;
-top: 0px;
-border-radius: nullpx;
-
-position: static;
-height: 20px;
-left: 0%;
-right: 0%;
-top: calc(50% - 20px/2 - 16px);
-
-font-family: var(--font-main);
-font-style: normal;
-font-weight: var(--heavy-font);
-font-size: 16px;
-line-height: 120%;
-/* identical to box height, or 19px */
-
-text-align: center;
-text-transform: uppercase;
-
-/* --c-primary */
-
-color: #1D1F22;
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin-top: 3.7rem;
-margin-right: 2rem;
-    
-    
-}
-
-.men{
-    position: static;
+.gender{
     height: 20px;
-    left: 0%;
-    right: 0%;
-    top: calc(50% - 20px/2 - 16px);
-    
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
-    /* identical to box height, or 19px */
+ 
     
     display: flex;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    
-    /* --c-text */
-    
     color: #1D1F22;
     
-    
-    /* Inside auto layout */
     
     flex: none;
     order: 0;
     flex-grow: 0;
     margin-top: 3.7rem;
-margin-right: 2rem;
-    
-}
-.children{
-/* Label */
-
-
-position: static;
-height: 20px;
-left: 0%;
-right: 0%;
-top: calc(50% - 20px/2 - 16px);
-
-font-family: var(--font-main);
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 120%;
-/* identical to box height, or 19px */
-
-display: flex;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
-
-/* --c-text */
-
-color: #1D1F22;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin-top: 3.7rem;
-margin-right: 2rem;
     
 }
 
- .men,.children{
-    margin-left: 2rem;
+
+ .gender{
+    margin-left: 1.5rem;
     
     
     }
-.women:hover,.men:hover,.children:hover{
+.gender:hover{
 border-bottom: 3px solid rgba(26, 119, 233, 0.733);
 cursor: pointer;
 
@@ -248,7 +165,20 @@ cursor: pointer;
     align-items: center;
     flex: 1;
 }
+option{  
+left: 88.06%;
+right: 8.06%;
+top: 8.92%;
+bottom: 89.16%;
 
+font-family: var(--font-main);
+font-style: normal;
+font-weight: var(--medium-font);
+font-size: 18px;
+line-height: 160%;
+
+color: #1D1F22;
+}
 select,.cart{
     margin-left: .5rem;
     cursor: pointer;

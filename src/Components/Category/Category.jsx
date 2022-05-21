@@ -16,7 +16,7 @@ export default class Category extends Component {
          </h2>
        </div>
        <div className='category__items-wrapper'>
-        {/* {
+        {
          
           prodauctData.map((data) => (
               <CategoryCard
@@ -26,8 +26,8 @@ export default class Category extends Component {
             price={data.productPrice}/>
           ))
           
-        } */}
-         <CartItemCard/>
+        }
+         <CartItemCard className='overlay'/>
         </div>
        
       </div>

@@ -2,14 +2,15 @@ import React from 'react';
 import { productA } from '../../assets';
 import './cartItemCard.css'
 
-export default function CartItemCard() {
+const CartItemCard  = ({productName, price, sizes, colors, qty, total}) => {
   return (
    <div className='cart__items_wrapper'>
       <div className='cart__item_wrapper'>
       <div className='cart__item_props'>
       <div className='products__wrapper'>
           <span className='product__name'>
-          Apollo Running Short
+          Apollo
+Running Short
               </span> 
               <span className='amount'>
               $50.00
@@ -20,10 +21,10 @@ export default function CartItemCard() {
                Size:
            </span>
            <div className='sizes'>
-               <span className='size'>XS</span>
-               <span className='size'>S</span>
-               <span className='size size__active'>M</span>
-               <span className='size'>L</span>
+            <span className='size'>XS</span>    
+            <span className='size'>S</span>   
+            <span className='size size__active'>M</span>
+            <span className='size'>L</span>    
            </div>
        </div>
        <div className='color__wrapper'>
@@ -71,3 +72,4 @@ export default function CartItemCard() {
    </div>
   )
 }
+export default CartItemCard

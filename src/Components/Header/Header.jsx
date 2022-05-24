@@ -4,6 +4,7 @@ import productData from '../dummyData/dummyData';
 import CategoryCard from '../../Cards/CategoryCard/CategoryCard';
 import CartItemCard from '../../Cards/CartItemCard/CartItemCard'
 import './header.css'
+import Category from '../Category/Category';
 
 const Header = () => {
 const [fetchedProducts, setFetchedProducts] = useState(productData);
@@ -11,8 +12,11 @@ const [open, setOpen] = useState(false);
 const [value, setValue] = useState(0);
 
 
+const reload = () => {
+  window.location.reload()
+}
 
-const { products } = fetchedProducts[value]
+const { products , category} = fetchedProducts[value]
 
     return (
       <div className="cart__body_wrapper">
@@ -26,7 +30,7 @@ const { products } = fetchedProducts[value]
                 onClick={() => setValue(index)}
                 className={`gender ${index === value && 'border'}`}
                 >
-                  {data.gender}
+                  {data.category}
                 </button>
                 <span className=""></span>
               </div>
@@ -36,7 +40,7 @@ const { products } = fetchedProducts[value]
         <div className="header__logo__wrapper">
           <div className="logo__container">
             <span className="">
-              <BsArrowCounterclockwise className='logo' />
+              <BsArrowCounterclockwise className='logo' onClick={reload}/>
             </span>
             <span className="arrow"></span>
           </div>
@@ -55,11 +59,13 @@ const { products } = fetchedProducts[value]
         {/* <CartItemCard className='cart__overlay'/> */}
       </div>
       <div className='category__wrapper'>
+      
        <div className='category__header'>
          <h2 className='category__header-text'>
-    Category name
+   {category}
          </h2>
        </div>
+        
        <div className='category__items-wrapper'>
         {
           products.map((data) => (

@@ -1,7 +1,7 @@
 import { productA, productB, productC, productD} from '../../assets/index'
 const data = [
 {
-    gender: 'WOMEN',
+    category: 'WOMEN',
     products:[
         {
             id:'1', image:productA, productName:"Apollo Running Short", productPrice: '$30.00'
@@ -30,7 +30,7 @@ const data = [
     ]
 },
 {
-    gender: 'MEN',
+    category: 'MEN',
     products:[
         {
             id:'9', image:productA, productName:"Apollo Running Short", productPrice: '$150.00'
@@ -62,7 +62,7 @@ const data = [
     ]
 },
 {
-    gender: 'kIDs',
+    category: 'KIDS',
     products:[
         {
             id:'8', image:productA, productName:"Apollo Running Short", productPrice: '$60.00'

@@ -1,23 +1,34 @@
-import React, { Component } from 'react';
+import React, { useState} from 'react';
 import { BsCart, BsArrowCounterclockwise } from '../../Components/Icons/index'
-import prodctData from '../dummyData/dummyData';
+import productData from '../dummyData/dummyData';
+import CategoryCard from '../../Cards/CategoryCard/CategoryCard';
 import CartItemCard from '../../Cards/CartItemCard/CartItemCard'
 import './header.css'
 
-export default class Header extends Component {
+const Header = () => {
+const [fetchedProducts, setFetchedProducts] = useState(productData);
+const [open, setOpen] = useState(false);
+const [value, setValue] = useState(0);
 
-  render() {
+
+
+const { products } = fetchedProducts[value]
+
     return (
-      <div className='header__wrapper'>
+      <div className="cart__body_wrapper">
+        <div className='header__wrapper'>
         <div className="header__firstchild">
           {
-            prodctData.map((data, index) => (
+            productData.map((data, index) => (
               <div className="child__wrapper" key={index}>
 
-                <button className="gender">
+                <button key={index}
+                onClick={() => setValue(index)}
+                className={`gender ${index === value && 'border'}`}
+                >
                   {data.gender}
                 </button>
-                <span className="border"></span>
+                <span className=""></span>
               </div>
             ))
             }
@@ -38,11 +49,33 @@ export default class Header extends Component {
             <option value="JPN">¥ JPN</option>
           </select>
           <span className="cart">
-            <BsCart />
+            <BsCart onClick={() => setOpen(!open)}/>
           </span>
         </div>
-        <CartItemCard className='cart__overlay'/>
+        {/* <CartItemCard className='cart__overlay'/> */}
+      </div>
+      <div className='category__wrapper'>
+       <div className='category__header'>
+         <h2 className='category__header-text'>
+    Category name
+         </h2>
+       </div>
+       <div className='category__items-wrapper'>
+        {
+          products.map((data) => (
+            <CategoryCard
+            key={data.id}
+            image={data.image}
+            productName={data.productName}
+            price={data.productPrice}/>
+             
+          ))
+        }
+        </div>
+       
+      </div>
       </div>
     )
   }
-}
+  export default Header
+

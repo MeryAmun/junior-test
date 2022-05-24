@@ -5,11 +5,14 @@ import './category.css'
 
 
  const Category = ()  => {
-  const [products, setProducts] = useState();
+  const [fetchedProducts, setFetchedProducts] = useState(prodauctData);
   const [loading, setLoading] = useState(false);
   const [value, setValue] = useState(0);
 
-//const {id, image, } = prodauctData[1].products
+//console.log(fetchedProducts[0].products)
+  //const newProducts = 
+ const { products } = fetchedProducts[value]
+ console.log(products)
     return (
       <div className='category__wrapper'>
        <div className='category__header'>

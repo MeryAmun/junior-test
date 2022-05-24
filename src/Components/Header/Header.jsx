@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BsCart, BsArrowCounterclockwise } from '../../Components/Icons/index'
-import prodctData from '../dummyData/dummyData'
+import prodctData from '../dummyData/dummyData';
+import CartItemCard from '../../Cards/CartItemCard/CartItemCard'
 import './header.css'
 
 export default class Header extends Component {
@@ -40,6 +41,7 @@ export default class Header extends Component {
             <BsCart />
           </span>
         </div>
+        <CartItemCard className='cart__overlay'/>
       </div>
     )
   }

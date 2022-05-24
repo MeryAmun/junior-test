@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import prodauctData from '../dummyData/dummyData';
 import CategoryCard from '../../Cards/CategoryCard/CategoryCard';
 import './category.css'
-import CartItemCard from '../../Cards/CartItemCard/CartItemCard';
+
 
  const Category = ()  => {
   const [products, setProducts] = useState();
@@ -28,7 +28,6 @@ import CartItemCard from '../../Cards/CartItemCard/CartItemCard';
              
           ))
         }
-         <CartItemCard className='overlay'/>
         </div>
        
       </div>

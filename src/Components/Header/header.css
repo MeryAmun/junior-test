@@ -169,8 +169,15 @@ select,.cart{
     cursor: pointer;
 }
 
-
-
+.btn{
+   margin: 2rem;
+   background: #5ECE7B;
+   border-radius: 5px;
+   padding: .5rem 1rem .5rem 1rem;
+   cursor: pointer;
+   font-family: var(--font-main);
+   font-weight: var(--medium-font);
+}
 
 @media  screen and (max-width: 1024px){
     .gender{

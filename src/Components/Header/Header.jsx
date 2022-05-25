@@ -6,6 +6,7 @@ import CategoryCard from '../../Cards/CategoryCard/CategoryCard';
 import CartOverlay from '../CartOverlay/CartOverlay.jsx'
 import './header.css'
 import { Link } from 'react-router-dom';
+import Cart from '../Cart/Cart';
 
 //Modal.setAppElement('#cart__body_wrapper');
 const Header = () => {
@@ -95,6 +96,7 @@ const Header = () => {
         </div>
 
       </div>
+      <Cart/>
     </div>
   )
 }

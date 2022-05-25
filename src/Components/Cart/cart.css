@@ -1,19 +1,16 @@
 .cart__wrapper{
-position: absolute;
-width: 1440px;
 height: 1435px;
-left: 0px;
-top: 78px;
+border: 2px solid red;
 
-background: rgba(57, 55, 72, 0.22);
+display: flex;
+flex-direction: column;
+
 }
 
 .cart__header_text{
-    position: absolute;
     width: 84px;
     height: 40px;
-    left: 100px;
-    top: 160px;
+   
 
 font-family: var(--font-main);
 font-style: normal;

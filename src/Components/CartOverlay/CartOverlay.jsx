@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import { productA } from '../../assets';
 import './cartOverlay.css'
 
-const CartItemCard  = ({productName, price, sizes, colors, qty, total}) => {
+const CartOverlay  = ({productName, price, sizes, colors, qty, total}) => {
   return (
-   <div className='cart__items_wrapper'>
-       <div className='cart__overlay__header'>
-         <div className='cart__overlay__header_text'>
-         <span className="cart__name">
+   <div className='cart__overlay_items_wrapper'>
+       <div className='cart__overlay_overlay__header'>
+         <div className='cart__overlay_overlay__header_text'>
+         <span className="cart__overlay_name">
          My Bag,
          </span>
          <span className="numberOf__items">
@@ -16,9 +16,9 @@ const CartItemCard  = ({productName, price, sizes, colors, qty, total}) => {
          </span>
          </div>
        </div>
-      <div className='cart__item_wrapper'>
-      <div className='cart__item_props'>
-      <div className='products__wrapper'>
+      <div className='cart__overlay_item_wrapper'>
+      <div className='cart__overlay_item_props'>
+      <div className='products__overlay__wrapper'>
           <span className='product__name'>
           Apollo
 Running Short
@@ -49,29 +49,29 @@ Running Short
            </div>
        </div>
       </div>
-      <div className='cart__value'>
-           <div className='cart__add'>
+      <div className='cart__overlay_value'>
+           <div className='cart__overlay_add'>
                <span className='sign'>+</span>
            </div>
-           <div className='cart__quantity'>
+           <div className='cart__overlay_quantity'>
                <span className='sign'>2</span>
            </div>
-           <div className='cart__reduce'>
+           <div className='cart__overlay_reduce'>
                <span className='sign'>-</span>
            </div>
        </div>
-       <img src={productA} alt='cart' className='cart__item_image'/>
+       <img src={productA} alt='cart' className='cart__overlay_item_image'/>
       </div>
-      <div className='cart__checkout_wrapper'>
+      <div className='cart__overlay_checkout_wrapper'>
           <div className='total__wrapper'>
               <span className='total'>
               Total
               </span>
-              <span className='cart__amount'>
+              <span className='cart__overlay_amount'>
               $200.00
               </span>
           </div>
-          <div className='cart__checkout'>
+          <div className='cart__overlay_checkout'>
               <div className='view__bag__wrapp'>
                   <Link to='/cart' className='bag'>View bag</Link>
               </div>
@@ -83,4 +83,4 @@ Running Short
    </div>
   )
 }
-export default CartItemCard
+export default CartOverlay

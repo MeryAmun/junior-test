@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CartItemCard from '../../Cards/CartItemCard/CartItemCard';
 import './cart.css'
 
 function Cart() {
@@ -8,9 +9,10 @@ function Cart() {
 
             <div className='cart__header'>
                 <h2 className='cart__header_text'>
-                   cart
+                    cart
                 </h2>
             </div>
+            <CartItemCard />
         </div>
     )
 }

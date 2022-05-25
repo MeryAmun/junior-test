@@ -1,0 +1,26 @@
+.cart__wrapper{
+position: absolute;
+width: 1440px;
+height: 1435px;
+left: 0px;
+top: 78px;
+
+background: rgba(57, 55, 72, 0.22);
+}
+
+.cart__header_text{
+    position: absolute;
+    width: 84px;
+    height: 40px;
+    left: 100px;
+    top: 160px;
+
+font-family: var(--font-main);
+font-style: normal;
+font-weight: var(--bold-font);
+font-size: 32px;
+line-height: 40px;
+text-transform: uppercase;
+
+color: #1D1F22;
+}

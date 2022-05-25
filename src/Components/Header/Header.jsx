@@ -3,10 +3,11 @@ import Modal from 'react-modal'
 import { BsCart, BsArrowCounterclockwise } from '../../Components/Icons/index'
 import productData from '../dummyData/dummyData';
 import CategoryCard from '../../Cards/CategoryCard/CategoryCard';
-import CartItemCard from '../../Cards/CartItemCard/CartItemCard'
+import CartOverlay from '../CartOverlay/CartOverlay.jsx'
 import './header.css'
-import Category from '../Category/Category';
+import { Link } from 'react-router-dom';
 
+//Modal.setAppElement('#cart__body_wrapper');
 const Header = () => {
   const [fetchedProducts, setFetchedProducts] = useState(productData);
   const [cartIsopen, setCartIsOpen] = useState(false);
@@ -63,7 +64,7 @@ const Header = () => {
         isOpen={cartIsopen} 
         style={customStyles}
        >
-        <CartItemCard/>
+        <CartOverlay/>
         <button className="btn" 
          onClick={() => setCartIsOpen(false)}>close</button>
         </Modal>
@@ -80,11 +81,14 @@ const Header = () => {
         <div className='category__items-wrapper'>
           {
             products.map((data) => (
-              <CategoryCard
-                key={data.id}
+              <Link to={`/product/${data.id}`}
+              style={{textDecoration:'none'}}
+              key={data.id}>
+                <CategoryCard
                 image={data.image}
                 productName={data.productName}
                 price={data.productPrice} />
+              </Link>
 
             ))
           }

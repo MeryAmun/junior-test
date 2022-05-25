@@ -1,10 +1,27 @@
-
 .cart__item_wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
  margin-bottom: 1rem;
 }
+
+.cart__name{
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: var(--font-bold);
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+.numberOf__items{
+    font-family: var(--font-main);
+font-size: 16px;
+font-weight: var(--medium-font);
+line-height: 26px;
+letter-spacing: 0em;
+text-align: right;
+}
+
 .products__wrapper{
     display: flex;
     flex-direction: column;

@@ -1,9 +1,13 @@
 import React from 'react';
 import './productDetails.css'
 
-const ProductDetailsPage = () => {
+const ProductDetailsPage = (props) => {
+  console.log(props)
   return (
-    <div>ProductDetailsPage</div>
+    <div>ProductDetailsPage
+
+      
+    </div>
   )
 }
 

@@ -61,3 +61,23 @@ flex: none;
 order: 0;
 flex-grow: 0;
 }
+
+.catigory__cart_icon{
+    height: 52px;
+width: 52px;
+left: 0px;
+top: 0px;
+border-radius: 10px;
+padding: 4px;
+color: #fff;
+
+
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* --c-primary */
+
+background: #5ECE7B;
+}
